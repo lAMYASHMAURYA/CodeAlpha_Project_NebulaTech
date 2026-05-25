@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experience premium cyberpunk tech peripherals at Nebula Tech. Fast delivery, glassmorphic design.">
+  <title>Nebula Tech | Premium E-Commerce</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Glowing Elements -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Header Navigation -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <a href="#/" class="logo">
+        <i class="fa-solid fa-circle-nodes logo-icon"></i>
+        <span>NEBULA<span class="accent-text">TECH</span></span>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="search-container">
+        <form id="search-form" class="search-form">
+          <input type="text" id="search-input" placeholder="Search premium tech..." aria-label="Search products">
+          <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+
+      <!-- Navigation & User Menu -->
+      <nav class="nav-menu">
+        <a href="#/" class="nav-link"><i class="fa-solid fa-store"></i> Store</a>
+        
+        <!-- Cart Status -->
+        <a href="#/cart" class="nav-link cart-link" id="cart-nav-btn">
+          <i class="fa-solid fa-shopping-cart"></i> Cart
+          <span class="cart-badge" id="cart-badge-count">0</span>
+        </a>
+
+        <!-- Auth Section -->
+        <div id="auth-nav-container" class="auth-nav-container">
+          <!-- Dynamically populated via JS -->
+          <a href="#/login" class="btn btn-outline nav-btn-login"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+          <a href="#/register" class="btn btn-primary nav-btn-register">Register</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Notification Banner -->
+  <div id="notification-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-content">
+      <i class="fa-solid fa-circle-check toast-icon"></i>
+      <span id="toast-message">Item added to cart!</span>
+    </div>
+  </div>
+
+  <!-- Main View Viewport -->
+  <main id="app" class="app-container">
+    <!-- Screen Loader -->
+    <div class="main-loader-container">
+      <div class="spinner"></div>
+      <p>Initializing Nebula Workspace...</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#/" class="logo">
+          <i class="fa-solid fa-circle-nodes logo-icon"></i>
+          <span>NEBULA<span class="accent-text">TECH</span></span>
+        </a>
+        <p class="brand-tagline">Next-generation hardware for builders, coders, and gamers. Engineered for absolute performance and premium aesthetics.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+        </div>
+      </div>
+      <div class="footer-links-group">
+        <h4>Catalog</h4>
+        <ul>
+          <li><a href="#/?category=Audio">Audio Equipment</a></li>
+          <li><a href="#/?category=Wearables">Wearables</a></li>
+          <li><a href="#/?category=Peripherals">Peripherals</a></li>
+          <li><a href="#/?category=Office">Smart Office</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#/">Contact Center</a></li>
+          <li><a href="#/">Shipping Policy</a></li>
+          <li><a href="#/">Warranty & Returns</a></li>
+          <li><a href="#/">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        <p>Subscribe for exclusive drops, early discounts, and setup inspiration.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to Nebula News!');">
+          <input type="email" placeholder="Enter email address" required aria-label="Email for newsletter">
+          <button type="submit" class="btn btn-primary">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nebula Tech Inc. All rights reserved. Crafted with Antigravity AI.</p>
+    </div>
+  </footer>
+
+  <!-- Frontend Logic -->
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
